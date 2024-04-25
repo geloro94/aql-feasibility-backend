@@ -43,13 +43,6 @@ jobs:
       - name: Run Tests
         run: mvn -Pdownload-ontology -B verify
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        with:
-          fail_ci_if_error: true
-
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
 
