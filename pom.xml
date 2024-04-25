@@ -26,7 +26,7 @@
     <java.version>17</java.version>
     <mockwebserver.version>4.10.0</mockwebserver.version>
     <okhttp3.version>4.10.0</okhttp3.version>
-    <ontology-tag>v2.2.1-synthea</ontology-tag>
+    <ontology-tag>v2.2.2-synthea</ontology-tag>
   </properties>
 
   <dependencies>
@@ -454,7 +454,7 @@
                   <executable>curl</executable>
                   <arguments>
                     <argument>-L</argument>
-                    <argument>https://github.com/medizininformatik-initiative/fhir-ontology-generator/raw/${ontology-tag}/example/mii_core_data_set/ontology/backend.zip</argument>
+                    <argument>https://github.com/medizininformatik-initiative/fhir-ontology-generator/raw/${ontology-tag}/example/synthea_data_set/ontology/backend.zip</argument>
                     <argument>-o</argument>
                     <argument>ontology/backend.zip</argument>
                   </arguments>
@@ -502,7 +502,7 @@
                   <executable>curl</executable>
                   <arguments>
                     <argument>-L</argument>
-                    <argument>https://github.com/medizininformatik-initiative/fhir-ontology-generator/raw/${ontology-tag}/example/mii_core_data_set/ontology/mapping.zip</argument>
+                    <argument>https://github.com/medizininformatik-initiative/fhir-ontology-generator/raw/${ontology-tag}/example/synthea_data_set/ontology/mapping.zip</argument>
                     <argument>-o</argument>
                     <argument>ontology/mapping.zip</argument>
                   </arguments>
